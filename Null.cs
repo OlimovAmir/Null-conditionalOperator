@@ -19,5 +19,7 @@ namespace Null_conditionalOperator
             int[] myArray = GetArray();
             Console.WriteLine("The sum of the Array elements " + (myArray?.Sum() ?? 0));
         }
+
+
     }
 }
