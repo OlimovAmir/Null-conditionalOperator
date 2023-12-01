@@ -11,7 +11,7 @@ namespace Null_conditionalOperator
 
         static int[] GetArray()
         {
-            int[] myArray = null;
+            int[] myArray = {25,85,36,15 };
             return myArray;
         }
         static void Main(string[] args)
