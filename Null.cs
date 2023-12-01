@@ -18,7 +18,7 @@ namespace Null_conditionalOperator
         {
             //Person person = new Person();
 
-            Person person = new Person() { Contacts = new Contacts() { PhoneNumber = "927354555" }  };
+            Person person = new Person() { Contacts = new Contacts() { PhoneNumber = null }  };
             return person;
         }
         static void Main(string[] args)
@@ -27,7 +27,7 @@ namespace Null_conditionalOperator
             Console.WriteLine("The sum of the Array elements " + (myArray?.Sum() ?? 0));
 
             Person person = GetPerson();
-            string phoneNumber = person.Contacts.PhoneNumber;
+            string phoneNumber = person?.Contacts?.PhoneNumber ?? "no data available";
 
             Console.WriteLine(phoneNumber);
         }
