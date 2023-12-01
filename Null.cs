@@ -11,13 +11,13 @@ namespace Null_conditionalOperator
 
         static int[] GetArray()
         {
-            int[] myArray = {25,85,36,15 };
+            int[] myArray = null;
             return myArray;
         }
         static void Main(string[] args)
         {
             int[] myArray = GetArray();
-            Console.WriteLine("The sum of the Array elements " + myArray.Sum());
+            Console.WriteLine("The sum of the Array elements " + (myArray?.Sum() ?? 0));
         }
     }
 }
